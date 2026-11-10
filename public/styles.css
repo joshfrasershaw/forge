@@ -11,7 +11,7 @@
 .nav-actions{gap:25px}
 .nav-cta{min-width:170px;padding:17px 19px}
 .hero{min-height:660px;isolation:isolate;background:#121716}
-.hero-photo{inset:0 0 0 36%;background:linear-gradient(90deg,rgba(16,21,21,.96) 0%,rgba(16,21,21,.35) 39%,rgba(16,21,21,.05) 100%),linear-gradient(0deg,rgba(10,14,15,.35),rgba(10,14,15,.06)),url('https://images.stockcake.com/public/b/3/5/b35c5ed9-91ca-437d-9ac0-560ad68cbe1d_large/carpenter-s-tool-belt-stockcake.jpg') center 52%/cover;filter:saturate(.76) contrast(1.2) sepia(.24)}
+.hero-photo{inset:0 0 0 36%;background:linear-gradient(90deg,rgba(16,21,21,.96) 0%,rgba(16,21,21,.35) 39%,rgba(16,21,21,.05) 100%),linear-gradient(0deg,rgba(10,14,15,.35),rgba(10,14,15,.06)),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1800&q=85') center 52%/cover;filter:saturate(.76) contrast(1.2) sepia(.24)}
 .hero:before{background:linear-gradient(90deg,#101617 0%,rgba(16,22,23,.98) 29%,rgba(16,22,23,.76) 45%,rgba(16,22,23,.05) 80%)}
 .hero:after{content:"";position:absolute;z-index:1;inset:auto 0 0;height:13px;background:linear-gradient(90deg,#68432f 0%,#765442 24%,#ddd6c5 25%,#ddd6c5 26%,#af302c 27%,#af302c 46%,#eee5d8 47%,#eee5d8 49%,#263f59 50%,#263f59 64%,#634532 65%,#634532 100%);box-shadow:0 -4px 13px #0005}
 .hero-inner{padding-top:70px;padding-bottom:80px}
@@ -39,13 +39,16 @@
 .footer .brand{font-size:34px!important}
 @media(max-width:1250px){.shell{width:min(100% - 70px,1460px)}.desktop-nav{gap:18px}.nav-wrap{gap:20px}.hero h1{font-size:clamp(63px,6.8vw,95px);letter-spacing:-4px}.proof-item{padding:0 16px}}
 @media(max-width:900px){.desktop-nav{display:none}.menu-toggle{display:block;border:1px solid #ffffff55;background:transparent;color:#fff;font-size:23px;padding:5px 12px}.nav-contact{display:none}.nav-cta{display:inline-flex}.hero h1{font-size:clamp(60px,8vw,88px)}}
-@media(max-width:760px){.shell{width:calc(100% - 36px)}.nav-wrap{min-height:73px}.brand{font-size:28px!important;letter-spacing:-1.5px!important}.brand small{font-size:7px!important;letter-spacing:2.8px!important}.nav-cta{display:none}.hero{min-height:710px}.hero-photo{inset:0;background:linear-gradient(0deg,rgba(13,18,19,.98) 0%,rgba(13,18,19,.65) 54%,rgba(13,18,19,.16) 100%),url('https://images.stockcake.com/public/b/3/5/b35c5ed9-91ca-437d-9ac0-560ad68cbe1d_large/carpenter-s-tool-belt-stockcake.jpg') center 35%/cover}.hero:before{background:linear-gradient(0deg,#0f1516 0%,transparent 95%)}.hero-inner{padding-top:210px;padding-bottom:63px}.hero h1{font-size:clamp(38px,8.5vw,65px);line-height:1.03;letter-spacing:-2px}.hero-lead{font-size:17px}.hero .btn{padding:15px 20px}.hero-footnote{font-size:9px}.proof-grid{padding:25px 0;gap:25px}.proof-item b{font-size:23px}.proof-item p{font-size:11px}.proof-item{gap:8px}.tile{min-height:250px}.work-thumb{height:250px}}
+@media(max-width:760px){.shell{width:calc(100% - 36px)}.nav-wrap{min-height:73px}.brand{font-size:28px!important;letter-spacing:-1.5px!important}.brand small{font-size:7px!important;letter-spacing:2.8px!important}.nav-cta{display:none}.hero{min-height:710px}.hero-photo{inset:0;background:linear-gradient(0deg,rgba(13,18,19,.98) 0%,rgba(13,18,19,.65) 54%,rgba(13,18,19,.16) 100%),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1800&q=85') center 35%/cover}.hero:before{background:linear-gradient(0deg,#0f1516 0%,transparent 95%)}.hero-inner{padding-top:210px;padding-bottom:63px}.hero h1{font-size:clamp(38px,8.5vw,65px);line-height:1.03;letter-spacing:-2px}.hero-lead{font-size:17px}.hero .btn{padding:15px 20px}.hero-footnote{font-size:9px}.proof-grid{padding:25px 0;gap:25px}.proof-item b{font-size:23px}.proof-item p{font-size:11px}.proof-item{gap:8px}.tile{min-height:250px}.work-thumb{height:250px}}
 @media(max-width:390px){.hero h1{font-size:37px;letter-spacing:-1.8px}}
 
 /* Final hero art treatment: warm tool pouch with intentional empty space */
-.hero-photo{inset:0;background:linear-gradient(90deg,#101617 0%,rgba(16,22,23,.90) 25%,rgba(16,22,23,.30) 55%,rgba(16,22,23,.03) 100%),url('https://images.stockcake.com/public/b/3/5/b35c5ed9-91ca-437d-9ac0-560ad68cbe1d_large/carpenter-s-tool-belt-stockcake.jpg') center center/cover no-repeat;filter:saturate(.83) contrast(1.12)}
+.hero-photo{inset:0;background:linear-gradient(90deg,#101617 0%,rgba(16,22,23,.90) 25%,rgba(16,22,23,.30) 55%,rgba(16,22,23,.03) 100%),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1800&q=85') center center/cover no-repeat;filter:saturate(.83) contrast(1.12)}
 .hero:before{background:linear-gradient(90deg,#101617 0%,rgba(16,22,23,.86) 29%,rgba(16,22,23,.60) 46%,transparent 73%)}
 .hero h1{max-width:900px}
 .hero-footnote{display:none}
 @media(min-width:761px){.hero-photo{background-size:cover;background-position:57% 49%}}
-@media(max-width:760px){.hero-photo{inset:0;background:linear-gradient(0deg,#101617 0%,rgba(16,22,23,.90) 30%,rgba(16,22,23,.25) 75%),url('https://images.stockcake.com/public/b/3/5/b35c5ed9-91ca-437d-9ac0-560ad68cbe1d_large/carpenter-s-tool-belt-stockcake.jpg') 66% center/cover no-repeat}.hero:before{background:linear-gradient(0deg,#101617 0%,rgba(16,22,23,.35) 55%,transparent 100%)}}
+@media(max-width:760px){.hero-photo{inset:0;background:linear-gradient(0deg,#101617 0%,rgba(16,22,23,.90) 30%,rgba(16,22,23,.25) 75%),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1800&q=85') 66% center/cover no-repeat}.hero:before{background:linear-gradient(0deg,#101617 0%,rgba(16,22,23,.35) 55%,transparent 100%)}}
+
+/* Legacy hero fallback: no decorative stripe/diagonal illustration. */
+.page-hero:after{display:none!important}
