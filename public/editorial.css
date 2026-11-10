@@ -1,0 +1,145 @@
+
+/* Forgepath: disciplined editorial system, not generic SaaS blocks */
+:root{--ink:#101719;--red:#b9272b;--paper:#f4f1e9;--line:#d2cec4;--body:"DM Sans",Arial,sans-serif}
+body{background:#f5f2ec}
+.header{background:#0e1415}
+.nav-wrap{gap:32px}
+.hero{min-height:665px}
+.hero-photo{inset:0!important;background:linear-gradient(90deg,#0d1415 0%,rgba(13,20,21,.93) 26%,rgba(13,20,21,.45) 58%,rgba(13,20,21,.07) 100%),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1800&q=85') center 49%/cover no-repeat!important;filter:saturate(.68) contrast(1.12)}
+.hero:before{background:linear-gradient(90deg,#101719 0%,rgba(16,23,25,.78) 30%,rgba(16,23,25,.08) 80%)!important}
+.hero:after{display:none}
+.hero-inner{padding-top:92px;padding-bottom:90px}
+.hero-content{max-width:790px}
+.hero h1{font-family:"Archivo Black",Impact,sans-serif;font-size:clamp(53px,5.25vw,93px);line-height:1.09;letter-spacing:-3px;max-width:900px}
+.flag-type{background:url('/union-jack.svg') center center/cover no-repeat!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0px 1px 0px #f6f1e850)!important}
+.hero-lead{font-size:clamp(17px,1.5vw,21px);max-width:560px;line-height:1.5}
+.hero .btn{padding:17px 28px}
+.forge-banner{background:#e8e4da;border-top:4px solid var(--red);border-bottom:1px solid #cec9bd}
+.forge-banner .shell{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:24px 0}
+.forge-banner strong{font:800 clamp(19px,2.05vw,29px)/1.08 "Barlow Condensed",sans-serif;letter-spacing:.2px}
+.forge-banner a{white-space:nowrap;font-size:13px;text-decoration:underline;text-underline-offset:5px;font-weight:800}
+.forge-page-hero{background:#111819;color:#f6f3ec;min-height:505px;overflow:hidden;position:relative}
+.forge-page-hero-inner{display:grid;grid-template-columns:56% 44%;min-height:505px;align-items:stretch;position:relative}
+.forge-page-hero-copy{padding:80px 30px 75px 0;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.forge-page-hero-copy h1{font:900 clamp(56px,5.2vw,94px)/.99 "Archivo Black",Impact,sans-serif;letter-spacing:-3px;text-transform:uppercase;max-width:850px;margin:0 0 25px}
+.forge-page-hero-copy p{max-width:585px;font-size:clamp(17px,1.35vw,20px);line-height:1.55;color:#d7dbd9;margin:0 0 30px}
+.forge-page-hero-copy .btn{align-self:flex-start}
+.forge-page-hero-photo{position:relative;min-width:0;margin-right:calc((min(1460px,100vw - 120px) - 100vw)/2);overflow:hidden}
+.forge-page-hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111819 0%,rgba(17,24,25,.32) 38%,transparent 75%),linear-gradient(0deg,#11181925,transparent)}
+.forge-page-hero-photo img{height:100%;width:100%;object-fit:cover;object-position:center;filter:saturate(.65) contrast(1.08)}
+.forge-section{padding:105px 0;background:#f6f3ed}
+.forge-warm{background:#ebe6dc}
+.forge-heading{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);align-items:end;gap:60px;margin-bottom:42px}
+.forge-heading h2,.forge-split-copy h2,.forge-contact-intro h2{font:900 clamp(48px,5.2vw,82px)/.96 "Archivo Black",Impact,sans-serif;letter-spacing:-2.8px;text-transform:uppercase;margin:0}
+.forge-heading p{margin:0;max-width:420px;font-size:17px;line-height:1.55;color:#4f5756}
+.forge-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #b8b4aa;border-bottom:1px solid #b8b4aa}
+.forge-cards article{padding:38px 34px 38px 0}
+.forge-cards article+article{border-left:1px solid #c7c2b7;padding-left:34px}
+.forge-cards article:nth-child(3n + 4){border-left:0;padding-left:0}
+.forge-cards article h3,.forge-links h3,.forge-work-grid h3,.forge-pricing h3{font:800 36px/1.02 "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:.1px;margin:0 0 16px}
+.forge-cards article p{font-size:15px;line-height:1.7;color:#5a605d;max-width:345px;margin:0}
+.forge-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.forge-links a{background:#f8f6f0;border:1px solid #d4cfc5;padding:34px;min-height:255px;display:flex;flex-direction:column;transition:transform .2s ease,background .2s ease}
+.forge-links a:hover{transform:translateY(-4px);background:white}
+.forge-links a h3{font-size:42px}
+.forge-links a p{color:#525a59;margin:0 0 30px;line-height:1.6}
+.forge-links a span{font-weight:800;text-decoration:underline;text-underline-offset:5px;color:#af2729;margin-top:auto;font-size:13px}
+.forge-trades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.forge-trades a{display:flex;flex-direction:column;position:relative;min-height:325px;background:#1b2628;color:white;justify-content:end;padding:26px;overflow:hidden;isolation:isolate}
+.forge-trades a:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#111819ec 4%,#11181944 85%);z-index:-1}
+.forge-trades img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:saturate(.7);transition:transform .3s}
+.forge-trades a:hover img{transform:scale(1.05)}
+.forge-trades strong{font:800 43px/.96 "Barlow Condensed",sans-serif;text-transform:uppercase;max-width:300px}
+.forge-trades span{font-size:13px;text-decoration:underline;text-underline-offset:5px;margin-top:18px}
+.forge-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+.forge-work-grid a{background:#fbfaf7;border:1px solid #d4cfc5;padding-bottom:25px}
+.forge-work-grid img{height:265px;width:100%;object-fit:cover;filter:saturate(.7)}
+.forge-work-grid h3,.forge-work-grid p,.forge-work-grid b{display:block;margin-left:24px;margin-right:24px}
+.forge-work-grid h3{margin-top:25px}
+.forge-work-grid p{font-size:14px;line-height:1.6;color:#5e6460;min-height:70px}
+.forge-work-grid b{font-size:13px;color:#a82326;text-decoration:underline;text-underline-offset:5px}
+.forge-truth{font-size:12px;color:#555e5d;margin:23px 0 0;border-left:3px solid var(--red);padding:10px 0 10px 16px;line-height:1.55}
+.forge-split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.forge-split-photo{min-width:0}
+.forge-split-photo img{height:520px;width:100%;object-fit:cover;filter:saturate(.72) contrast(1.08)}
+.forge-split-copy h2{font-size:clamp(45px,4.1vw,70px);margin-bottom:25px}
+.forge-split-copy p{font-size:17px;line-height:1.7;color:#505855;max-width:570px}
+.forge-split-copy .btn{margin-top:15px}
+.forge-cta{background:#193249;color:#f7f4ec;padding:88px 0}
+.forge-cta h2{font:900 clamp(54px,6vw,100px)/.97 "Archivo Black",Impact,sans-serif;letter-spacing:-3px;text-transform:uppercase;max-width:1080px;margin:0 0 25px}
+.forge-cta p{font-size:20px;color:#d8e0df;max-width:610px}
+.forge-cta .btn{margin-top:15px}
+.forge-faq{border-top:1px solid #bdb9b0}
+.forge-faq details{border-bottom:1px solid #bdb9b0;padding:25px 0}
+.forge-faq summary{cursor:pointer;font-weight:800;font-size:20px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.forge-faq summary:after{content:"+";font:800 29px/1 "Barlow Condensed",sans-serif;color:#b42b2e}
+.forge-faq details[open] summary:after{content:"−"}
+.forge-faq details p{font-size:16px;color:#575f5c;line-height:1.7;max-width:790px}
+.forge-related{padding:35px 0;border-top:1px solid #c3beb2;border-bottom:1px solid #c3beb2}
+.forge-related a{font:800 25px "Barlow Condensed",sans-serif;text-decoration:underline;text-underline-offset:5px}
+.forge-pricing{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.forge-pricing article{border-top:5px solid #b4292d;background:#f8f6f0;padding:30px;display:flex;flex-direction:column;min-height:300px}
+.forge-pricing p{line-height:1.7;color:#5e6461}
+.forge-pricing strong{margin-top:auto;font-size:14px}
+.forge-pricing a{font-weight:800;font-size:13px;text-decoration:underline;text-underline-offset:5px;color:#ad292a;margin-top:18px}
+.forge-article{display:grid;grid-template-columns:1fr 300px;gap:85px}
+.forge-article>div>section{padding:0 0 30px;margin-bottom:35px;border-bottom:1px solid #d3cec4}
+.forge-article h2{font:800 44px/1 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.forge-article p{font-size:18px;line-height:1.8;max-width:780px}
+.forge-article aside{background:#eae5da;padding:26px;align-self:start;position:sticky;top:30px}
+.forge-article aside h3{font:800 30px "Barlow Condensed",sans-serif}
+.forge-article aside p{font-size:15px}
+.forge-article aside .btn{padding:14px;font-size:13px}
+.forge-contact-intro h2{font-size:clamp(46px,4vw,67px);margin-bottom:25px}
+.forge-contact-intro p{font-size:17px;line-height:1.75;max-width:430px}
+.forge-contact-intro .forge-truth{font-size:13px}
+.contact-form{box-shadow:none}
+.contact-form input,.contact-form textarea,.contact-form select{border-color:#bbb6aa}
+.footer .brand small{letter-spacing:3px!important}
+@media(max-width:1150px){
+.forge-page-hero-copy h1{font-size:clamp(49px,5vw,76px)}
+.forge-heading h2,.forge-split-copy h2{font-size:clamp(42px,5vw,68px)}
+.forge-cards article{padding-right:20px}
+.forge-cards article+article{padding-left:20px}
+.forge-split{gap:40px}
+}
+@media(max-width:760px){
+.hero{min-height:660px}
+.hero-photo{background:linear-gradient(0deg,#101719 0%,rgba(16,23,25,.90) 27%,rgba(16,23,25,.17) 92%),url('https://images.unsplash.com/photo-1642796470393-4d62f7690485?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat!important}
+.hero:before{background:linear-gradient(0deg,#101719,transparent)!important}
+.hero-inner{padding-top:205px;padding-bottom:54px}
+.hero h1{font-size:clamp(37px,9vw,64px);letter-spacing:-1.6px;line-height:1.06}
+.hero-lead{font-size:16px}
+.forge-banner .shell{align-items:flex-start;flex-direction:column;gap:10px;padding:21px 0}
+.forge-page-hero{min-height:0}
+.forge-page-hero-inner{display:flex;flex-direction:column-reverse;min-height:0}
+.forge-page-hero-photo{margin:0 -18px;height:245px}
+.forge-page-hero-photo:after{background:linear-gradient(0deg,#111819 0%,rgba(17,24,25,.05) 85%)}
+.forge-page-hero-copy{padding:22px 0 55px}
+.forge-page-hero-copy h1{font-size:clamp(39px,10vw,65px);letter-spacing:-2px}
+.forge-page-hero-copy p{font-size:16px}
+.forge-section{padding:64px 0}
+.forge-heading{display:block;margin-bottom:26px}
+.forge-heading h2,.forge-split-copy h2{font-size:clamp(38px,9vw,60px);letter-spacing:-1.7px}
+.forge-heading p{font-size:15px;margin-top:16px}
+.forge-cards,.forge-links,.forge-work-grid,.forge-pricing,.forge-split,.forge-article{grid-template-columns:1fr}
+.forge-cards article,.forge-cards article+article,.forge-cards article:nth-child(3n + 4){padding:25px 0;border-left:0;border-bottom:1px solid #c9c4b9}
+.forge-cards article:last-child{border-bottom:0}
+.forge-cards article h3{font-size:32px}
+.forge-links a{min-height:220px}
+.forge-trades{grid-template-columns:1fr 1fr;gap:10px}
+.forge-trades a{min-height:230px;padding:18px}
+.forge-trades strong{font-size:30px}
+.forge-work-grid img{height:235px}
+.forge-work-grid p{min-height:0}
+.forge-split{gap:26px}
+.forge-split-photo img{height:300px}
+.forge-cta{padding:64px 0}
+.forge-cta h2{font-size:clamp(42px,10vw,70px);letter-spacing:-1.8px}
+.forge-cta p{font-size:17px}
+.forge-article{gap:24px}
+.forge-article aside{position:static}
+.forge-contact-intro h2{font-size:45px}
+}
+@media(max-width:390px){.forge-trades{grid-template-columns:1fr}.hero h1{font-size:35px}}
+@media(prefers-reduced-motion:reduce){.forge-trades img,.forge-links a{transition:none!important}}
