@@ -106,7 +106,7 @@ else out=notFound();
 document.getElementById("main").innerHTML=out;
 const title=document.querySelector("h1")?.textContent?.replace(/\s+/g," ").trim()||"Web design for UK trades";
 document.title=(path==="/")?"Forgepath — Built for the people who build Britain":title+" | Forgepath";
-document.querySelector('meta[name="description"]').setAttribute("content",path==="/"?"Forgepath builds exceptional websites for UK trades businesses. Built for the people who build Britain.":(document.querySelector(".page-hero p")?.textContent||"Professional websites for British trades businesses."));
+document.querySelector('meta[name="description"]').setAttribute("content",path==="/"?"Forgepath builds exceptional websites for UK trades businesses. Built for the people who build Britain.":((document.querySelector(".forge-page-hero-copy p")||document.querySelector(".page-hero p"))?.textContent||"Professional websites for British trades businesses."));
 document.getElementById("year").textContent=new Date().getFullYear();
 const f=document.getElementById("enquiry-form");
 if(f)f.addEventListener("submit",e=>{e.preventDefault();if(!f.reportValidity())return;const data=new FormData(f),v=k=>String(data.get(k)||"").trim();const subject="Forgepath website enquiry — "+v("business");const body="Name: "+v("name")+"\nBusiness: "+v("business")+"\nEmail: "+v("email")+"\nTrade: "+v("trade")+"\nService: "+v("service")+"\n\nProject:\n"+v("message");document.getElementById("form-status").textContent="An email draft will open. Please add the Forgepath recipient address and press Send in your email app.";location.href="mailto:?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)});
